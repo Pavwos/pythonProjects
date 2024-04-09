@@ -1,3 +1,5 @@
+#converter números binários
+
 numeroBin = input('Digite um número: ')
 
 decimal = 0

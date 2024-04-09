@@ -1,3 +1,5 @@
+#ver se pode votar, se não pode ou se é opcional
+
 idade = int(input('Qual a sua idade?: '))
 
 if idade < 16:

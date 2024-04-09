@@ -1,3 +1,5 @@
+#calular o desconto de um produto a partir de 20% de desconto
+
 valor = int(input('Digite o valor do produto: '))
 
 if valor >= 200:

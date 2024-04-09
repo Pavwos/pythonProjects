@@ -1,3 +1,7 @@
+#caclular o perímetro e área de um retângulo
+
+print('O objeto é um triângulo.')
+
 lado1 = int(input('Valor do lado 1: '))
 lado2 = int(input('Valor do lado 2: '))
 
