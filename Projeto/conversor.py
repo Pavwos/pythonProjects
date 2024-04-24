@@ -69,11 +69,13 @@ def bin_to_dec(binario):
 # Hexadecimal para Decimal
 def hex_to_dec(hexadecimal):
     decimal = 0
-    for index, bit in enumerate(reversed(hexadecimal)):
+    expoente = 0
+    for bit in reversed(hexadecimal):
         if bit.isdigit():
-            decimal += int(bit) * (16**index)
+            decimal += int(bit) * (16**expoente)
         else:
-            decimal = decimal * 16 + ord(bit.upper()) - ord('A') + 10
+            decimal += (ord(bit.upper()) - ord('A') + 10) * (16**expoente)
+        expoente += 1
     return decimal
 
 
@@ -88,7 +90,7 @@ def oct_to_dec(octal):
 
 
 while escolha > 0:
-    numero = int(input('Digite o número que deseja converter: '))
+    numero = input('Digite o número que deseja converter: ')
 
     if escolha == 1:
         print('-----Decimal para Binário-----')
