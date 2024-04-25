@@ -6,7 +6,7 @@
 ### Após isso, o programa guarda a decisão do usuário na variável escolha.
 ### Logo, o programa guarda várias funções que serão utilizadas mais tarde. Cada uma das funções segue um padrão lógico.
 
-# Decimal para Binários e Octais.
+## Decimal para Binários e Octais.
 
 ### As funções de binário e octal seguem a mesma lógica.Primerio se cria a função com o parâmetro decimal, que será o valor escolhido. Depois vem um bloco de decisão, confere-se se o valor é 0, isso retornará 0, então ele mantém a variável 'binário' vazia.
 
