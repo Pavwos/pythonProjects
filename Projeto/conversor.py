@@ -1,8 +1,9 @@
 print('------Integrantes do grupo-------')
-print('Nome: João da Silva, RGM: 6969420')
-print('Nome: Maria da Sila, RGM: 6969696')
-print('Nome: Jorge da Sila, RGM: 4206942')
-print('Nome: Maira da Sila, RGM: 4204206')
+print('Nome: Felipe Maldiny, RGM: 6969420')
+print('Nome: José Afonso, RGM: 6969696')
+print('Nome: Mateus Rodrigues, RGM: 4204206')
+print('Nome: Matheus Teles, RGM: 4206942')
+print('Nome: Raphael Pavanelli, RGM: 38332230')
 print('------Integrantes do grupo-------')
 print('')
 print('Seja bem vindo ao nosso sistema de conversão de bases.')
@@ -73,8 +74,10 @@ def hex_to_dec(hexadecimal):
     for bit in reversed(hexadecimal):
         if bit.isdigit():
             decimal += int(bit) * (16**expoente)
-        else:
+        elif 'A' <= bit.upper() <= 'F':
             decimal += (ord(bit.upper()) - ord('A') + 10) * (16**expoente)
+        else:
+            raise ValueError("Caractere inválido encontrado: " + bit)
         expoente += 1
     return decimal
 
@@ -89,36 +92,63 @@ def oct_to_dec(octal):
     return decimal
 
 
-while escolha > 0:
-    numero = input('Digite o número que deseja converter: ')
+while escolha > 0 and escolha < 7:
+    numero = input("Digite o número que deseja converter: ")
 
     if escolha == 1:
-        print('-----Decimal para Binário-----')
-        binario = dec_to_bin(numero)
-        print(f'O valor {numero} em binário é: {binario}')
-        print('-----Decimal para Binário-----')
+        if not numero.isdigit():
+            print()
+            print("Entrada inválida. Por favor, insira um número decimal válido.")
+            break
+        else:
+            print('-----Decimal para Binário-----')
+            bin = dec_to_bin(int(numero))
+            print(f'O valor {numero} em Binário é: {bin}')
+            print('-----Decimal para Binário-----')
     elif escolha == 2:
-        print('-----Decimal para Hexadecimal-----')
-        hexadecimal = dec_to_hex(numero)
-        print(f'O valor {numero} em hexadecimal é: {hexadecimal}')
-        print('-----Decimal para Hexadecimal-----')
+        if not numero.isdigit():
+            print()
+            print("Entrada inválida. Por favor, insira um número decimal válido.")
+            break
+        else:
+            print('-----Decimal para Hexadecimal-----')
+            hex = dec_to_hex(int(numero))
+            print(f'O valor {numero} em Hex é: {hex}')
+            print('-----Decimal para Hexadecimal-----')
     elif escolha == 3:
-        print('-----Decimal para Octal-----')
-        octal = dec_to_oct(numero)
-        print(f'O valor {numero} em octal é: {octal}')
-        print('-----Decimal para Octal-----')
+        if not numero.isdigit():
+            print()
+            print("Entrada inválida. Por favor, insira um número decimal válido.")
+            break
+        else:
+            print('-----Decimal para Octal-----')
+            octal = dec_to_oct(int(numero))
+            print(f'O valor {numero} em octal é: {octal}')
+            print('-----Decimal para Octal-----')
     elif escolha == 4:
-        print('-----Binário para Decimal-----')
-        decimal = bin_to_dec(str(numero))
-        print(f'O valor {numero} em decimal é: {decimal}')
-        print('-----Binário para Decimal-----')
+        if not numero.isdigit():
+            print()
+            print("Entrada inválida. Por favor, insira um número decimal válido.")
+            break
+        else:
+            print('-----Binário para Decimal-----')
+            decimal = bin_to_dec(str(numero))
+            print(f'O valor {numero} em decimal é: {decimal}')
+            print('-----Binário para Decimal-----')
     elif escolha == 5:
         print('-----Hexadecimal para Decimal-----')
         decimal = hex_to_dec(str(numero))
         print(f'O valor {numero} em decimal é: {decimal}')
         print('-----Hexadecimal para Decimal-----')
     elif escolha == 6:
-        print('-----Octal para Decimal-----')
-        decimal = oct_to_dec(str(numero))
-        print(f'O valor {numero} em decimal é: {decimal}')
-        print('-----Octal para Decimal-----')
+        if not numero.isdigit():
+            print()
+            print("Entrada inválida. Por favor, insira um número decimal válido.")
+            break
+        else:
+            print('-----Octal para Decimal-----')
+            decimal = oct_to_dec(str(numero))
+            print(f'O valor {numero} em decimal é: {decimal}')
+            print('-----Octal para Decimal-----')
+    else:
+        break

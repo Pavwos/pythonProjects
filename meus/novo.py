@@ -5,4 +5,3 @@ def modulo(n):
 
 print(modulo(-2))
 print(modulo(2))
-    
