@@ -1,4 +1,4 @@
-# Conversor de Decimal para Bases Numéricas e vice versa
+# Conversor de Bases Numéricas. Documentação
 
 ### O código é simples.
 ### Primeiro é apresentado os integrantes do grupo. Em seguida, uma mensagem de boas vindas e um pedido para o usuário escolher uma opção e um input para a escolha.
@@ -26,7 +26,10 @@
 
 ## Mostrando a mensagem.
 
-### 
+### Primeiro se coleta a escolha do usuário, 0 a 6. Caso seja 0 ou maior que 6, o programa é interrompido. Caso contrário, o programa entra em um bloco de decisão sobre a escolha. Para o primeiro caso (decimal para bin, oct ou hex), dentro desse bloco, existe mais um bloco de decisão para conferir se o que o usuário digitou foi um número (exceto no caso Hexadecimal), caso não, ele mostra uma mensagem de entrada inválida. Se não, ele segue para a mensagem, primeiro ele cria uma variável com o nome da base utilizada e adiciona ela à respectiva função. Dentro da função ele converte o número digitado para um inteiro. Logo é mostrado o valor original e o valor convertido.
 
+### No segundo caso a única diferença é que inves de inteiro, ele é convertido para string.
 
-# Como usar o conversor.
+## Como usar o conversor.
+
+### Escolha qual conversão deseja fazer. Depois escolha o valor que deseja converter. Caso queira sair, digite 'N'.
