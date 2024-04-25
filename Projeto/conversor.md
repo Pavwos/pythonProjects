@@ -33,3 +33,7 @@
 ## Como usar o conversor.
 
 ### Escolha qual conversão deseja fazer. Depois escolha o valor que deseja converter. Caso queira sair, digite 'N'.
+
+## Não fazer!!
+
+### O programa não suporta números negativos, números com virgula ou pontos.
