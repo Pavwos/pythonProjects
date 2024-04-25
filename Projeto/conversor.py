@@ -29,19 +29,6 @@ def dec_to_bin(decimal):
         decimal = decimal // 2
     return binario
 
-
-# Decimal para Octal
-def dec_to_oct(decimal):
-    if decimal == 0:
-        return '0'
-    octal = ''
-    while decimal > 0:
-        resto = decimal % 8
-        octal = str(resto) + octal
-        decimal = decimal // 8
-    return octal
-
-
 # Decimal para Hexadecimal
 def dec_to_hex(decimal):
     if decimal == 0:
@@ -56,6 +43,16 @@ def dec_to_hex(decimal):
         decimal = decimal // 16
     return hexadecimal
 
+# Decimal para Octal
+def dec_to_oct(decimal):
+    if decimal == 0:
+        return '0'
+    octal = ''
+    while decimal > 0:
+        resto = decimal % 8
+        octal = str(resto) + octal
+        decimal = decimal // 8
+    return octal
 
 # Binário para Decimal
 def bin_to_dec(binario):
