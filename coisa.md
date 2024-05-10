@@ -21,9 +21,9 @@ Os **requisitos de negócio** são aqueles que visam atender as necessidades e o
 Os **requisitos de usuários** são as necessidades, expectativas e preferências dos usuários finais do sistema. Eles representam os recursos específicos que os usuários desejam ver no sistema para atender às suas necessidades operacionais, funcionais e de usabilidade.
 
 ## 07. Explique o que são requisitos de sistema com foco nos seguintes itens, demostre exemplos práticos de como mapear estes elementos.
-**a. Requisitos funcionais**
+- **a. Requisitos funcionais**
     São aqueles que o usuário vê e interage apenas. Por exemplo, botões, telas, caixas de texto.
-**b. Requisitos não funcionais**
+- **b. Requisitos não funcionais**
     São aqueles que o usuário apenas sente. Por exemplo, segurança, travamentos, velocidade.
 
 ## 08. Explique como são classificados os requisitos e quais os tipos de prioridades em que eles podem ser organizados.     
