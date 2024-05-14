@@ -29,6 +29,17 @@ def dec_to_bin(decimal):
         decimal = decimal // 2
     return binario
 
+# Decimal para Octal
+def dec_to_oct(decimal):
+    if decimal == 0:
+        return '0'
+    octal = ''
+    while decimal > 0:
+        resto = decimal % 8
+        octal = str(resto) + octal
+        decimal = decimal // 8
+    return octal
+
 # Decimal para Hexadecimal
 def dec_to_hex(decimal):
     if decimal == 0:
@@ -43,16 +54,6 @@ def dec_to_hex(decimal):
         decimal = decimal // 16
     return hexadecimal
 
-# Decimal para Octal
-def dec_to_oct(decimal):
-    if decimal == 0:
-        return '0'
-    octal = ''
-    while decimal > 0:
-        resto = decimal % 8
-        octal = str(resto) + octal
-        decimal = decimal // 8
-    return octal
 
 # Binário para Decimal
 def bin_to_dec(binario):
@@ -63,6 +64,14 @@ def bin_to_dec(binario):
         expoente += 1
     return decimal
 
+# Octal para Decimal
+def oct_to_dec(octal):
+    decimal = 0
+    expoente = 0
+    for bit in reversed(octal):
+        decimal += int(bit) * (8**expoente)
+        expoente += 1
+    return decimal
 
 # Hexadecimal para Decimal
 def hex_to_dec(hexadecimal):
@@ -75,17 +84,6 @@ def hex_to_dec(hexadecimal):
             decimal += (ord(bit.upper()) - ord('A') + 10) * (16**expoente)
         expoente += 1
     return decimal
-
-
-# Octal para Decimal
-def oct_to_dec(octal):
-    decimal = 0
-    expoente = 0
-    for bit in reversed(octal):
-        decimal += int(bit) * (8**expoente)
-        expoente += 1
-    return decimal
-
 
 while escolha > 0 and escolha < 7:
     numero = input("Digite o número que deseja converter [Press 'N' to exit]: ")
