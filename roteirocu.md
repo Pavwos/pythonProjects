@@ -1,6 +1,8 @@
 # tutorial brabo de conversor pra faculdade atualizado 2.51.69
 
-bom dia a todes, meu nome é ***[nome]***, vou explicar como funciona o código do conversor junto do meu grupo. Na primeira parte, nós colocamos as informações do grupo, como nome e RGM, logo embaixo adicionamos as opções para o usuário escolher, também com um input que receberá o valor desejado.
+boa noite a todos, meu nome é ***[nome]***, vou explicar como funciona o código do conversor junto do meu grupo. 
+Na primeira parte, nós colocamos as informações do grupo, como nome e RGM, logo embaixo adicionamos as opções para o usuário escolher, também com um input que receberá o valor desejado.
+
 na segunda parte, começamos com a primeira função, que converte decimal para binário. primeiro, ele confere se o valor inserido é igual a 0, caso ele for, retorna-se 0, se não, ele cria uma variável *binario* que tem um valor vazio. depois, ele inicia um loop enquanto decimal for maior que 0, ele criará uma variável resto que dividirá o decimal por 2 e pegar o seu resto, depois esse valor é adicionado na variavél *binario* do lado esquerdo, e convertido para string, para construir o número da esquerda pra direita. o decimal, então, é dividido por 2 usando o *floor* , isso removerá o digito menos significativo do número decimal, preparando-o para a continuação do loop.
 
 o sistema octal funciona da mesma for, só trocar o 2 por 8 ._.
